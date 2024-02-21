@@ -1,0 +1,30 @@
+.align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: calc(100% - 10px);
+}
+.inputBorder {
+  border-radius: 5px;
+}
+.productTittle {
+  margin: 10px;
+}
+.border {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid black !important;
+  border-radius: 5px;
+  padding: 5px;
+  width: calc(100% - 60px);
+}
+
+.product1 {
+  flex-direction: row;
+}
+
+.product2 {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,29 @@
+.products {
+  border: 1px solid black;
+  width: calc(100% - 20px);
+  margin: 0 auto; 
+  border-radius: 5px;
+  
+}
+.productsTitle {
+  width: calc(100% - 20px);
+  margin: 0 auto; 
+  padding-left: 15px;
+  text-align: start;
+  background-color: #0085b2;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+}
+
+.bt-addProduct {
+  display: block;
+  margin: 10px; 
+  text-align: center;
+  background-color: #019e10;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+

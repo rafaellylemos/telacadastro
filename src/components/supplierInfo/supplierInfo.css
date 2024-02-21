@@ -1,0 +1,17 @@
+.data {
+  width: calc(100% - 40px);
+  margin: 0 auto; 
+  padding-left: 15px;
+  text-align: start;
+  background-color: #0085b2;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+}
+
+.form {
+  width: calc(100% - 40px);
+  margin: 0 auto; 
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}

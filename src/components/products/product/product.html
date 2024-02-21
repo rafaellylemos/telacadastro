@@ -1,0 +1,37 @@
+  <div class="productTittle">
+    <h6 id="productNumber">Produto</h6>
+  </div>
+  <div class="align">
+  <form class="border">
+    <div class="product1">
+      <div>
+        <label for="product" >Produto</label>
+        <input type="text" id="product" class="inputBorder" onchange="coletarDadosDoFormulario()">
+      </div>
+    </div>
+    <div class="product2">
+      <div>
+        <label for="opcoes">UND. Medida:</label>
+        <select id="opcoes" name="opcoes" class="inputBorder" onchange="coletarDadosDoFormulario()">
+          <option value="" disabled selected hidden></option>
+          <option value="Unidade">Unidade</option>
+          <option value="Dezena">Dezena</option>
+          <option value="Centena">Centena</option>
+        </select>
+      </div>
+      <div >
+        <label for="quantidade" >QTDE. em Estoque</label>
+        <input type="text" id="quantidade" class="inputBorder" onchange="totalValue(), coletarDadosDoFormulario()">
+      </div>
+      <div >
+        <label for="valor" >Valor Unitário</label>
+        <input type="text" id="valor" class="inputBorder" onchange="totalValue(), coletarDadosDoFormulario()">
+      </div>
+      <div >
+        <label for="valorTotal" >Valor Total</label>
+        <input type="text" id="valorTotal" class="inputBorder" disabled onchange="coletarDadosDoFormulario()">
+      </div>
+    </div>
+  </form>
+  </div>
+</div>

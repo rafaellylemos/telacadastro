@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.supplierCad {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+.sep {
+  margin: 10px;
+}
+
+.bt-saveSupplier {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 0 auto; 
+  text-align: center;
+  background-color: #019e10;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #019e10;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
