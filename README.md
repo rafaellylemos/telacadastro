@@ -1,6 +1,10 @@
 <h1 align="center"> CADASTRO FORNECEDOR/PRODUTO </h1>
 
 <p align="center">
+<img alt="Preview" src="../VFLOWS/src/assets/imgs/download.png">
+</p>
+
+<p align="center">
 Aplicação em CRUD desenvolvida para o teste de estágio da empresa VFlows. FEV/24
 </p>
 <strong>IMPORTANTE:</strong> Aplicação ainda sendo desenvolvida!
@@ -14,7 +18,7 @@ Aplicação em CRUD desenvolvida para o teste de estágio da empresa VFlows. FEV
 </p>
 
 <p align="center">
-  <img alt="License" src="../VFLOWS/src/assets/imgs/download.png">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
 <br>
