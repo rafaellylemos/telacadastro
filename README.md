@@ -1,7 +1,7 @@
 <h1 align="center"> CADASTRO FORNECEDOR/PRODUTO </h1>
 
 <p align="center">
-<img alt="Preview" src="../VFLOWS/src/assets/imgs/download.png">
+<img alt="Preview" src="https://github.com/VFLOWS/Teste-Estagio/blob/main/docs/CadastroFornecedorModelo.pdf">
 </p>
 
 <p align="center">
