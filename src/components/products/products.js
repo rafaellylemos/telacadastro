@@ -56,55 +56,84 @@ function handleFormSubmit(productValue, opcoesValue, quantidadeValue, valorValue
     const newLink = document.createElement('a');
     newLink.textContent = 'Documento Anexo';
     newLink.href = '#'; // Define o href como "#" para não redirecionar
-    newLink.addEventListener('click', function() {
-      showModal(linkText); // Mostra o modal personalizado com o texto do link
-    });
+    // newLink.addEventListener('click', function() {
+    //   showModal(linkText); // Mostra o modal personalizado com o texto do link
+    // });
 
     linkPopup.appendChild(newLink);
+
+
+    const newItem2 = document.createElement('div');
+    newItem2.classList.add('item2');
+    newItem2.classList.add('hidden2');
+    newItem2.innerHTML = `
+      <p>Produto: ${productValue}</p>
+      <p>UND. Medida: ${opcoesValue}</p>
+      <p>QTDE. em Estoque: ${quantidadeValue}</p>
+      <p>Valor Unitário: ${valorValue}</p>
+      <p>Valor Total: ${valorTotalValue}</p>
+    `;
+
+    const itemsContainer2 = document.querySelector('.item2');
+    itemsContainer2.appendChild(newItem2);
+
+    const linkPopup2 = document.getElementById('item2');
+    console.log(linkPopup2);
+    const linkText2 = linkPopup2.innerText;
+    console.log(linkText2);
+
+    const newLink2 = document.createElement('a');
+    newLink2.textContent = 'Documento Anexo 2';
+    newLink2.href = '#'; // Define o href como "#" para não redirecionar
+    // newLink.addEventListener('click', function() {
+    //   showModal(linkText); // Mostra o modal personalizado com o texto do link
+    // });
+
+    linkPopup2.appendChild(newLink2);
   }
 }
 
 // Função para exibir um modal personalizado
-function showModal(content) {
-  const modalBackdrop = document.createElement('div');
-  modalBackdrop.classList.add('modal-backdrop');
-  document.body.appendChild(modalBackdrop);
+// function showModal(content) {
+//   const modalBackdrop = document.createElement('div');
+//   modalBackdrop.classList.add('modal-backdrop');
+//   document.body.appendChild(modalBackdrop);
 
-  const modal = document.createElement('div');
-  modal.classList.add('modal');
-  modal.innerHTML = `
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Conteúdo do Link</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ${content}
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        </div>
-      </div>
-    </div>
-  `;
-  document.body.appendChild(modal);
+//   const modal = document.createElement('div');
+//   modal.classList.add('modal');
+//   modal.innerHTML = `
+//     <div class="modal-dialog">
+//       <div class="modal-content">
+//         <div class="modal-header">
+//           <h5 class="modal-title">Conteúdo do Link</h5>
+//           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+//             <span aria-hidden="true">&times;</span>
+//           </button>
+//         </div>
+//         <div class="modal-body">
+//           ${content}
+//         </div>
+//         <div class="modal-footer">
+//           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+//         </div>
+//       </div>
+//     </div>
+//   `;
+//   document.body.appendChild(modal);
 
-  modal.addEventListener('shown.bs.modal', function () {
-    const item = document.querySelector('.item');
-    //item.classList.remove('hidden'); // Remove a classe hidden para mostrar o item
-    console.log(item);
-  });
+//   modal.addEventListener('shown.bs.modal', function () {
+//     const item = document.querySelector('.item');
+//     //item.classList.remove('hidden'); // Remove a classe hidden para mostrar o item
+//     console.log(item);
+//   });
 
-  modal.addEventListener('hidden.bs.modal', function () {
-    document.body.removeChild(modal);
-    document.body.removeChild(modalBackdrop);
-    const item = document.querySelector('.item');
-    item.classList.add('hidden'); // Adiciona a classe hidden para esconder o item novamente
-  });
+//   modal.addEventListener('hidden.bs.modal', function () {
+//     document.body.removeChild(modal);
+//     document.body.removeChild(modalBackdrop);
+//     const item = document.querySelector('.item');
+//     item.classList.add('hidden'); // Adiciona a classe hidden para esconder o item novamente
+//   });
 
-  $(modal).modal('show'); // Ativa o modal usando jQuery
-}
+//   $(modal).modal('show'); // Ativa o modal usando jQuery
+// }
 

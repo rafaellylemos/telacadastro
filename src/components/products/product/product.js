@@ -4,37 +4,16 @@ function addProductToDOM() {
   fetch('../src/components/products/product/product.html')
     .then(response => response.text())
     .then(html => {
-      const productContainers = document.getElementsByClassName('product');
-      // Itera sobre a coleção de elementos com a classe 'product'
-      Array.from(productContainers).forEach(container => {
-        container.innerHTML = html;
-
-        // const id = document.getElementById('1');
-        // // console.log(id.innerHTML);
-
-  
-        // let labelElement = document.getElementById("productNumber");
-
-        // // if (parent.document.getElementById("1").querySelector("#productNumber")) {
-        // //     labelElement.innerText = "Produto 1";
-        // // } else if (parent.document.getElementById("2").querySelector("#productNumber")) {
-        // //     labelElement.innerText = "Produto 2";
-        // // }
-        //  //const id2 = document.getElementById('2');
-        // // console.log(id2)
-        // //let labelElement2 = document.getElementById("productNumber");
-        // //labelElement2.innerText = "Produto 2";
+      const productContainer = document.getElementById('product');
+    
+        productContainer.innerHTML = html;
       });
-    })
-    .catch(error => console.error('Erro ao carregar o conteúdo do produto:', error));
 
-   
-
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = '../src/components/products/product/product.css';
-  document.head.appendChild(link);
-}
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '../src/components/products/product/product.css';
+      document.head.appendChild(link);
+    }
 
 addProductToDOM();
 
